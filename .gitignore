@@ -1,0 +1,31 @@
+# ARCHIVOS LOG Y DEPURACION
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+
+# DEPENDENCIAS
+/node_modules
+/vendor
+/build
+/dist
+/.venv
+
+# ARCHIVOS DE ENTORNO Y CONFIGURACION
+.env
+.env.local
+.env.production
+.env.development
+
+# ARCHIVOS DE CACHE Y COMPILACION
+*.cache
+*.class
+*.pyc
+
+# IDEs
+.vscode/
+.idea
+
+# ARCHIVOS DE SO
+Thumbs.db
