@@ -1,3 +1,33 @@
+/* Gradient background from "Acerca de" to "Contacto" */
+.gradient-background {
+    background: linear-gradient(to top, #FFFFFF, #F2EFEB, #E5D9D1); /* Azul claro gradient vertical */
+}
+/*Opcion color 71554B*/
+
+/* Difuminado entre sección inicio y acerca de */
+#inicio {
+    position: relative;
+    overflow: hidden;
+}
+#inicio::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #E5D9D1);
+    z-index: 10;
+}
+
+/* Responsive imagen small and medium */
+@media (max-width: 1024px) {
+    #inicio {
+        background-position: 85% top !important;
+    }
+}
+
 /* Estilos personalizados para animaciones sutiles */
 .hover-scale:hover {
     transform: scale(1.05);
@@ -98,11 +128,11 @@
 }
 .flip-card-front {
     background-color: white;
-    color: #304878;
+    color: #000000;
     font-size: 3rem;
 }
 .flip-card-back {
-    background-color: #304878;
+    background-color: #181818;
     color: white;
     transform: rotateY(180deg);
 }
@@ -121,21 +151,15 @@
     color:#181848;
 }
 .text-blue-medium {
-    color:#304878;
+    color:#000000;
 }
 
-/* Fondo Gris */
-.bg-sand {
-    background-color: #F2EFEB;
-}
-
-/* Fondo Amarillo*/
-.bg-yellow {
+/* Boton Amarillo*/
+.btn-yellow {
     background-color: #F0A818;
 }
 
-/* Fondo Gris Oscuro */
+/* Footer Gris Oscuro */
 .bg-dark-grey {
     background-color: #505154;
 }
-
