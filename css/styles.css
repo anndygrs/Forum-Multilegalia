@@ -1,6 +1,6 @@
 /* Gradient background from "Acerca de" to "Contacto" */
 .gradient-background {
-    background: linear-gradient(to top, #FFFFFF, #F2EFEB, #E5D9D1); /* Azul claro gradient vertical */
+    background: linear-gradient(to top, #F2EFEB, #E5D9D1); /* Azul claro gradient vertical */
 }
 /*Opcion color 71554B*/
 
